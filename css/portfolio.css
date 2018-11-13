@@ -1,0 +1,33 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    color: green;
+}
+
+body {
+    background: black;
+}
+
+/**
+Animation
+*/
+
+.blink {
+    animation: blinker .5s cubic-bezier(.5, 0, 1, 1) infinite alternate;  
+}
+
+@keyframes blinker {  
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+p {
+    margin: 0;
+}
+
+#temp {
+    display: inline-block;
+}
+
+#input {
+    opacity: 0;
+}
